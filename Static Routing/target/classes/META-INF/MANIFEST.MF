@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1762922618705
+Build-Jdk: 11.0.28
+Built-By: grid
+Bundle-Description: OnePing (only) sample application
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: oneping
+Bundle-SymbolicName: org.onosproject.oneping
+Bundle-Version: 2.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.onos.oneping;uses:="org.onosproject.core,org.onospro
+ ject.net.flow,org.onosproject.net.host,org.onosproject.net.packet,org.o
+ nosproject.net.topology";version="2.0.0"
+Import-Package: org.onlab.graph;version="[2.2,3)",org.onlab.packet;versi
+ on="[2.2,3)",org.onosproject.core;version="[2.2,3)",org.onosproject.eve
+ nt;version="[2.2,3)",org.onosproject.net;version="[2.2,3)",org.onosproj
+ ect.net.flow;version="[2.2,3)",org.onosproject.net.host;version="[2.2,3
+ )",org.onosproject.net.packet;version="[2.2,3)",org.onosproject.net.top
+ ology;version="[2.2,3)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.service;filter:="(objectClass=org.onosproject.c
+ ore.CoreService)";effective:=active,osgi.service;filter:="(objectClass=
+ org.onosproject.net.flow.FlowRuleService)";effective:=active,osgi.servi
+ ce;filter:="(objectClass=org.onosproject.net.host.HostService)";effecti
+ ve:=active,osgi.service;filter:="(objectClass=org.onosproject.net.packe
+ t.PacketService)";effective:=active,osgi.service;filter:="(objectClass=
+ org.onosproject.net.topology.TopologyService)";effective:=active,osgi.e
+ xtender;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(ver
+ sion>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=11))"
+Service-Component: OSGI-INF/org.onos.oneping.OnePing.xml
+Tool: Bnd-4.1.0.201810181252
